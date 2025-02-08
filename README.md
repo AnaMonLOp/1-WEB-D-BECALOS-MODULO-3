@@ -3,9 +3,9 @@ En este repositorio se almacenarán, organizados en carpetas, las actividades, e
 Además, se incluirá una carpeta dedicada a los proyectos asignados en la plataforma DEV.F.
 
 ## 🚀 Tecnologías utilizadas
-Lenguajes: JavaScript
-Entorno de desarrollo: Visual Studio Code
-Herramientas: Git, GitHub
+Lenguajes: JavaScript <br>
+Entorno de desarrollo: Visual Studio Code <br>
+Herramientas: Git, GitHub <br>
 Plataforma de aprendizaje: DEV.F
 
 ### ✨ Autor

@@ -16,7 +16,7 @@ let exponentes = 2 ** 3
 console.log (suma, resta, multiplicacion, division, modulo, exponentes);
 
 /* 
-    Jerarquía de operadores matématicos
+    Jerarquía de operadores matemáticos
     1. Paréntesis ()
     2. Exponentes **
     3. Multiplicación y División

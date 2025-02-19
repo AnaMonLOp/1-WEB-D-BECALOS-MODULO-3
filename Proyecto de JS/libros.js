@@ -9,7 +9,7 @@ function agregarLibro(titulo){
     librosLeidos.push(titulo);
 }
 
-//Función para impirmir los libros que se han leído
+//Función para imprimir los libros que se han leído
 function mostrarLibrosLeidos(){
     console.log(librosLeidos);
 }

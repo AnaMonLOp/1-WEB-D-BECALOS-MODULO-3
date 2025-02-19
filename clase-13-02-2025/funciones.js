@@ -29,6 +29,7 @@ saludaPersona("Lucinda")
 console.log("Ejecuto saludar",saludar());
 console.log("Ejecuto saludarPersona()", saludaPersona("Laura"));
 
+
 //Una función puede devolver un valor con "return"
 function suma(num1, num2){
     return num1 + num2

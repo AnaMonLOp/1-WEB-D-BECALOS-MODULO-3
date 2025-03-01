@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué opinas?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">¿Qué opinas de la Pelicula?🍿📽️</h1>
+    </header>
+    <main>
+        <section aria-labelledby="titulo">
+            <form id="Pelicula">
+                <p>¡Hola! Bienvenido a la comunidad "¿Qué opinas de la película?"</p>  
+                <p>Aquí puedes compartir tu opinión sobre cualquier película. Agrega su nombre, género, calificación y tu reseña. ¡Únete y descubre un mundo lleno de cine junto a nosotros! 😎</p>
+                <br>
+
+                <label for="nombre">Nombre de la Pelicula:</label>
+                <input type="text" id="nombre" required>
+    
+                <label for="genero">Género:</label>
+                <select id="genero">
+                    <option value="Drama">🎭 Drama</option>
+                    <option value="Comedia">😂 Comedia </option>
+                    <option value="Acción">🎬 Acción</option>
+                    <option value="Terror">😱 Terror</option>
+                    <option value="Romance">💌 Romance</option>
+                    <option value="Animación">👨‍👩‍👧‍👦 Animación</option>
+                </select>
+
+                <label for="calificación">Calificación (1-5): </label>
+                <input type="number" id="calificacion" min="1" max="5">
+
+                <label for="opinion">Tu opinión:</label>
+                <textarea id="opinion" placeholder="Escribe aquí tu reseña..." rows="8" cols="81"></textarea>
+
+    
+                <button type="submit">¡Agregar Reseña!</button>
+            </form>
+        </section>
+    
+        <section>
+            <h2>Reseñas</h2>
+            <ul id="resena" aria-labelledby="lista-resenas"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Gestión de Productos</p>
+    </footer>
+    <script src="commentBox.js"></script>
+</body>
+</html>

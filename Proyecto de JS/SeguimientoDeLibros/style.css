@@ -1,0 +1,101 @@
+/* Tomé como referencia el estilo del ejercicio de la clase del 25/02/2025 */
+
+:root {
+    --primary-color: #050a3a;
+    --secondary-color: hsl(335, 68%, 45%);
+    --background-color: #050a3a;
+    --hoover-color: #61f9c4;
+    --text-color: #000000;
+    --highlight-color: #fefcaf;
+    --extra-color: rgb(249, 86, 154); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Courier New', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+main {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+form {
+    background: rgb(255, 255, 160);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+label, input, select {
+    font-family: serif, sans-serif;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.75rem;
+}
+
+button {
+    background-color: var(--secondary-color);
+    font-family: 'Courier New', sans-serif;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    color: black;
+    background-color: var(--hoover-color)
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+#resena {
+    color: white;
+}
+
+li.resena {
+    border-left: 0.5rem solid var(--highlight-color);
+}
+
+.boton-eliminar {
+    background-color: var(--extra-color);
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    width: auto;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+}

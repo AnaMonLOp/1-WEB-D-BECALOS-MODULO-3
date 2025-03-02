@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo de Lectura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">✨Libros Libros LIBROS 🌈📖</h1>
+    </header>
+    <main>
+        <section aria-labelledby="titulo">
+            <form id="Libro">
+                <p>¡Hola! Bienvenido a la comunidad "Mundo de Lectura"</p>  
+                <p>¡Ven y compártenos todos los increíbles viajes que has hecho a través de las páginas! 😻👑</p>
+                <br>
+
+                <label for="nombre">Nombre de la Libro:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="autor">Nombre del autor:</label>
+                <input type="text" id="autor" required>
+    
+                <label for="genero">Género:</label>
+                <select id="genero">
+                    <option value="Romance">💗 Romance</option>
+                    <option value="noFiccion">✍️ No Ficción </option>
+                    <option value="Fantasia">🐲 Fantasía</option>
+                    <option value="Misterio">🕵️ Misterio/Thriller</option>
+                </select>
+
+                <label for="anio">Fecha de Publicación: </label>
+                <input type="number" id="anio" min="1" max="2026">
+
+                <label for="calificación">Calificación (1-5): </label>
+                <input type="number" id="calificacion" min="1" max="5">
+
+                <label for="opinion">Tu opinión:</label>
+                <textarea id="opinion" placeholder="Escribe aquí tu reseña..." rows="10" cols="81"></textarea>
+                <button type="submit">¡Agregar Libro!</button>
+            </form>
+        </section>
+    
+        <section id="resena">
+            <h2>⭐ Reseñas ✨</h2>
+            <br>
+            <ul id="resena" aria-labelledby="lista-resenas"></ul>
+        </section>
+    </main>
+    <script src="Libross.js"></script>
+</body>
+</html>

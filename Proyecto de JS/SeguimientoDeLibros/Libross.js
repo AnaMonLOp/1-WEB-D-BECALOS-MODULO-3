@@ -1,5 +1,5 @@
 class Libro {
-    //ATRIBUTOS dentro del CONSTRUCTOR
+    //ATRIBUTOS dentro del CONSTRUCTOR 
     constructor(nombre, autor, genero, anio, calificacion , opinion){
         this.nombre = nombre
         this.autor = autor

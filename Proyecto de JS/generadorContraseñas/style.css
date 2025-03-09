@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+:root {
+    --primary-color: #24232a;
+    --secondary-color: #a4f9ae;
+    --background-color: #111015;
+    --text-color1: #f6f8f5eb;
+    --text-color2: #5c6161;
+}
+
+body {
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-color);
+    color: var(--text-color1);
+    padding: 20px;
+}
+
+header {
+    color:var(--text-color2);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.passwordBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color:  var(--primary-color);
+    width: 25%;
+
+}
+
+.passwordBox input {
+    background-color: var(--primary-color);
+    color: var(--text-color1);
+    width: 85%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 1.25rem;
+    border: none;
+    outline: none;
+}
+
+.passwordBox i {
+    color:  var(--secondary-color);
+    position: absolute;
+    right: 15px;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+i:hover{
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 25%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+.rangeLength {
+    display: flex;
+    gap: 150px;
+    margin-bottom: 10px;
+    font-size: .85rem;
+    align-items: center;
+}
+
+.rangeLength span{
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+}
+
+input[type="range"]{
+    accent-color: var(--secondary-color);
+    width: 100%;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    gap: 8px; /* Espaciado entre cada opción */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 80%;
+    font-size: .85rem;
+}
+
+.checkbox-group div {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaciado entre el checkbox y el texto */
+}
+
+input[type="checkbox"] {
+    /* Elimina el estilo predeterminado */
+    -webkit-appearance: none; 
+    -moz-appearance: none;   
+    appearance: none; 
+    width: 15px;              
+    height: 15px;             
+    border: 2px solid white;   
+    background-color: var(--primary-color);  
+    cursor: pointer;
+    position: relative;  
+}
+
+input[type="checkbox"]:checked {
+    background-color:var(--secondary-color); 
+    border-color: var(--secondary-color);    
+}
+
+/* Flecha (marca de verificación) dentro del checkbox */
+input[type="checkbox"]:checked::before {
+    content: "✔";      
+    position: absolute;       /* Posiciona la marca dentro del cuadro */
+    left: 15%;     
+    font-size: 10px; 
+    font-weight: bold;
+    color: black;   
+}
+
+/* Cambio de color cuando el checkbox está en estado hover */
+input[type="checkbox"]:hover {
+    border-color:var(--secondary-color);
+}
+
+.strength-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    background-color: var(--background-color);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.strength-container p{
+    font-size: .75rem;
+    color: gray;
+}
+.sc1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.strength-bars {
+    display: flex;
+    gap: 5px;
+}
+
+.bar {
+    width: 8px;
+    height: 20px;
+    background-color:var(--background-color);
+    border: 1px solid white;
+    transition: background-color 0.3s ease;
+}
+
+#generatePass {
+    font-weight: bolder;
+    width: 100%;
+    height: 50px;
+    background-color:var(--secondary-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--background-color);
+
+}
+
+#generatePass:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+footer{
+    color: var(--text-color2);
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+/*Ajuste de visualización en otro tipo de pantalla*/
+
+@media screen and (max-width: 500px){
+    .passwordBox {
+        width:80%;
+    }
+    .rangeLength {
+        display: flex;
+        gap: 150px;
+    }
+    form {
+        width: 80%;
+    }  
+}
+
+@media screen and (max-width: 1024px){
+    .passwordBox {
+        width:50%;
+    }
+    form {
+        width: 50%;
+    }  
+}
